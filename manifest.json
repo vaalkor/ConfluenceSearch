@@ -1,0 +1,20 @@
+{
+  "name": "ConfluenceSearch",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "For searching confluence pages...",
+  "browser_action": 
+  {
+    "default_title": "ConfluenceSearch",
+    "default_popup": "popup.html"
+  },
+  "content_scripts" : [
+    {
+      "matches" : ["<all_urls>"],
+      "js" : ["content_script.js"]
+    }
+  ],
+  "permissions" : [
+    "tabs"
+  ]
+}

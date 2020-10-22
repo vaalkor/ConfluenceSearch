@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title></title>
+  <link rel="icon" href="icon19.png">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <p>Search confluence page!</p>
+  <input id="searchWord" type="search" placeholder="Search Here">
+  <div id="searchButton" class="mybuttons">Search!</div>
+  <div id="resultsSuccess" style="display:none">
+    <div id="nextPrevWrapper">
+      <div id="previousButton" class="mybuttons nextprev">Previous</div>
+      <div id="nextButton" class="mybuttons nextprev">Next</div>
+    </div>
+    
+    <div id="searchState"></div>
+    <div id="clearButton" class="mybuttons">Clear</div>
+  </div>
+  
+  <div id="resultsFailure">
+    <p>No results found.</p>
+  </div>
+  
+  <div class="checkbox" id="matchCaseCheckbox"></div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
